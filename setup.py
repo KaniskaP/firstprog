@@ -1,11 +1,11 @@
 # =============================================================================
-# Author: Kan!skA
-#     Date:   Jul 30, 2014
-#     File:  setup.py
+#     Author: Kan!skA
+#     Date:   Aug 05, 2014
+#     File:   Setup.py
 #     Description: This is the cx_Freeze setup file for creating an exe program
 # =============================================================================
 from cx_Freeze import setup, Executable
-# NOTE: you can include any other necessary external imports here aswell
+# NOTE: you can include any other necessary external imports here as well
 
 includefiles = []  # include any files here that you wish
 includes = []
@@ -34,5 +34,5 @@ setup(
     author_email="email@kaniska.in",
     options={"build_exe": {"excludes": excludes, "packages": packages,
                            "include_files": includefiles}},
-    executables=[exe], requires=['cx_Freeze']
+    executables=[exe], requires=['cx_Freeze', 'selenium']
 )
