@@ -34,5 +34,5 @@ setup(
     author_email="email@kaniska.in",
     options={"build_exe": {"excludes": excludes, "packages": packages,
                            "include_files": includefiles}},
-    executables=[exe], requires=['cx_Freeze', 'selenium', 'sauceClient']
+    executables=[exe], requires=['cx_Freeze']
 )
