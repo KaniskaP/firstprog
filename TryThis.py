@@ -11,4 +11,4 @@ browser.get('http://www.google.com')
 assert 'Google' in browser.title
 href = browser.find_element_by_name('q')  # Find the search box
 href.send_keys('kaniska.in' + Keys.RETURN)
-browser.quit()
+# browser.quit()
